@@ -26,14 +26,26 @@
     border-radius: 5px;
     font-size: 20px;
     color: white;
+    cursor: pointer;
 }
 
 
 
 header{
-    background-color: #eeb78f;
+background-color: rgb(14, 191, 231);
     padding-top: 51px; 
     /* fig */
+
+    /* How to use multiple picture as --- Background at different positions ? ??
+    ans: use --url(first address, 2nd   , 3rd  and so on) 
+     
+    ----------Here, first time we take --- picture or image in CSS FILE--WE DO IT--->> When we TAKE PICTURE AS >> BACKGROUND..  
+    */
+    background: url(../images/developer.png ) , url(../images/header_bg.png),#FFF8F3;
+    background-position: top left, bottom right;
+
+    /* The above 2 will work --- with one with another ................................................................. */
+    background-repeat: no-repeat;
     
 }
 
@@ -56,7 +68,8 @@ nav{
     /* fix .         the nav can be maximum 1140px */
     margin: 0px auto;  
     /* auto is work like dynamic --taking space from both side pixel by pixel at the end the nav is in the middle..  */
-    border: 1px solid red;
+
+    /* border: 1px solid red; */
 
 
     display: flex;       /*  flex is applicable for Every thing not only div but also those who are block elements --or inline (they change their directions, x to y , and y to x ) */ 
@@ -77,4 +90,54 @@ nav .menu a{
     font-size: 20px;
     color: #474747;
     text-decoration: none;
+}
+
+
+/* ---------------------------HERO SECTION  */
+
+#banner{
+/* border: 1px solid red ; */
+
+margin: 46px 38px 0px 230px;
+/* the margin is for the hero section  */
+display: flex;
+justify-content: space-between;
+align-items: center; 
+/* This 3 steps makes the Block elements first: inline than, Vertically those elements center--everyone individually..  */
+/* background-color: aquamarine; */
+}
+#banner .banner-content{
+    max-width: 585px;
+}
+
+#banner .banner-content h2{
+
+font-size: 45px;
+font-weight: 600;
+/* as font Semibold--so font weight 600 */
+color: #474747;
+margin-bottom: 5px;
+}
+
+#banner .banner-content h1{
+    font-size: 85px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #181818;
+
+}
+
+#banner .banner-content p{
+    font-size: 18px;
+    color: #757575;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+
+#banner .banner-image img{
+max-width: 584px;
+vertical-align: middle; 
+/* the vertical-aline tag >> fixed the picture at the Accurate position  */
+
 }
