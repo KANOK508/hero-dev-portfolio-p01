@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* above we remove the by default margin and padding ......... */
+
+/* .open-sans-<uniquifier> { */
+
+/* this above is not supported til now--so we create a valid class name (the above we learn after )  */
+.font-open-sans{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100; */
+}
+
+header{
+    background-color: #eeb78f;
+}
