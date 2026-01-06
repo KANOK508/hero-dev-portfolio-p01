@@ -1,12 +1,14 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box; /*   when we use a padding the will not go outside the -- border... when we use this attributes ..      */
 }
 /* above we remove the by default margin and padding ......... */
 
 /* .open-sans-<uniquifier> { */
 
 /* this above is not supported til now--so we create a valid class name (the above we learn after )  */
+/* shared Style */
 .font-open-sans{
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -16,6 +18,63 @@
     "wdth" 100; */
 }
 
+
+.button_01 {
+    background-color: #FD6E0A;
+    border: none;
+    padding: 18px 35px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+
+
 header{
     background-color: #eeb78f;
+    padding-top: 51px; 
+    /* fig */
+    
+}
+
+
+.logo h2{
+    font-size: 45px;
+
+}
+.color-orange{
+    color: #FD6E0A;
+}
+
+    
+
+/* main style */
+nav{
+    width: 67%;
+    /* as, my devise width (at 90%) 1702px...the nav will be 1140px (as given in fig file)  */
+    max-width: 1140px;
+    /* fix .         the nav can be maximum 1140px */
+    margin: 0px auto;  
+    /* auto is work like dynamic --taking space from both side pixel by pixel at the end the nav is in the middle..  */
+    border: 1px solid red;
+
+
+    display: flex;       /*  flex is applicable for Every thing not only div but also those who are block elements --or inline (they change their directions, x to y , and y to x ) */ 
+    justify-content: space-between;
+     text-align: center;
+}
+
+
+nav .menu {
+
+ display: flex;
+ list-style-type: none;
+ gap: 51px;
+align-items: center;
+}
+
+nav .menu a{
+    font-size: 20px;
+    color: #474747;
+    text-decoration: none;
 }
