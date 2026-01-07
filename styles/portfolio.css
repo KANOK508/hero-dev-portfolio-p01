@@ -179,7 +179,9 @@ nav .menu a {
 }
 
 /*  WORK FOR SKILLS SECTION (we give this section name as --skills as WE WORK ON SEMANTIC TAGS     */
-#skills {
+#skills,
+#about,
+#resume {
   padding-top: 130px;
 }
 
@@ -244,3 +246,155 @@ nav .menu a {
   line-height: 28px;
   color: #757575;
 }
+
+
+/* ============================================================================ */
+
+#resume .section-heading h2{
+      max-width: 827px;
+  text-align: center;
+  /*  but not --- > absolute Middle at the Page..  */
+  margin: 0px auto; /* For this Margin the class will 
+    --now stay at the Absolute Middle of this Page with the width and align given..  */
+
+}
+
+#resume .resume-container {
+display: flex;
+gap: 24px;
+/* This gap is between the flex objects.. */
+width: 71%;
+max-width: 1140px;
+margin: 113px auto 0px;
+/* top  ,left-right same, bottom */
+
+
+
+}
+
+/* 
+.education .resume-card {
+
+} */
+
+.resume-container .section-title{
+    color: #474747;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+
+.resume-card{
+    max-width: 511px;
+    margin-right: 47px;
+       /* margin: 30px 47px 30px 0px;    that is not --correct coding  */
+
+}
+
+.resume-card .card-title{
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #474747;
+
+
+}
+.resume-card .card-info {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    /* for ---semibold set ---font-weight =600  */
+    color: #757575;
+}
+
+.resume-card .card-text{
+     
+    font-size: 16px;
+    line-height: 28px;
+    color: #757575;
+
+}
+
+.resume-container hr {
+    margin: 30px 0px; 
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+.button_02 {
+  background-color: #e16e1c;
+  border: none;
+  padding: 18px 35px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+/* ============================================================================= */
+
+
+footer{
+    margin-top: 130px;
+    background-color: #FFF8F3;
+    padding: 130px 0px;
+
+}
+
+footer .footer-container {
+     width: 71%;
+     max-width: 1140px;
+     margin: 0px auto;
+
+     display: flex;
+     gap: 116px;  /* Distribute between the flex item.. */
+}
+
+.footer-container .social {
+    max-width: 564px;
+}
+
+.footer-container h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-container .social p{
+ line-height: 28px;
+ columns: #474747;
+ /* font-size: 16px;  we don't have to give that --that was set by default..  */
+ margin-bottom: 30px; 
+ /* such like the line height the gap at bottom is margin-bottom not padding.. think about Margin first.. for Gap between two separate elements ..  */
+
+}
+
+.footer-container .icon a {
+    margin-right: 24px;
+}
+
+.footer-container form input[type="text"],
+.footer-container form textarea{
+
+    width: 461px;
+    /* Don't need to give the heigh anymore.. anytime ---------- ???????????
+    We cover the hight using the padding margin-bottom etc...............
+    
+
+    ---------------------------------------
+      <textarea rows="10" name="" id="" placeholder="Massage">  </textarea>
+
+      for give extra height for textarea tag we add-- row span ---- technique above.. 
+    */
+    padding: 18px 31px;
+    margin-bottom: 24px;
+
+    border: none;
+    border-radius: 5px;
+
+    color: #757575;
+
+
+} 
