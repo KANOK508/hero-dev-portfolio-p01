@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First portfolio with hero</title>
+
+    <!-- add the cdnjs link for use free icon from --FONT AWESOME... WEBSITE..  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="styles/portfolio.css" />
     <!-- Add the font family open sans   the link is from google font website and searching for open sans fort..
 
@@ -45,8 +49,20 @@
             he. Morning because as to society behaved moments.
           </p>
           <div>
-            <button class="button_01">Download Cv</button>
-            <button class="button_01">Content</button>
+            <!-- iN THIS div we also add--ICON from font awesome, HOW  ? 
+
+             as our this html file connect with font awesome using link (which we get from ------cdnjs.com----- 
+             we add this link in our this html file head tag.... after or before css style link...   )
+             
+             we in our html file the link have --we can add any icon using the <i class=" xxxxxxx "> </i>  that kind of link for
+             a specific icon--Which is Html tag link..
+             
+             ( <i class="Icon_class_name"> </i> )
+              
+             Note : ICON IS WORK LIKE A CHARACTER.... THIS TAG IS GIVE A CHARACTER ICON ONLY.. -->
+
+            <button class="button_01"><i class="fa-solid fa-download"></i> Download Cv</button>
+            <button class="button_01"><i class="fa-solid fa-square-phone"></i>Content</button>
             <!-- buttons are inline so, this 2 button will go into a same line,, as they are in a same div.. 
             Note: One div content will go In block with another block or div element  
             -->
@@ -225,7 +241,7 @@
       </div>
 
       <div class="text-center">
-        <button class="button_01">Download CV</button>
+        <button class="button_01"><i class="fa-solid fa-download"></i>Download CV</button>
       </div>
     </section>
     <footer>

@@ -40,7 +40,11 @@ header {
     */
   background: url(../images/developer.png), url(../images/header_bg.png),
     #fff8f3;
-  background-position: top left, bottom right;
+  /* background-position: top left, bottom right; */
+ 
+  /* instead of ---write top left --
+          we can give (x    y) value---from x axis, y axis... for a url  or picture..  */
+  background-position: 24px 38px, bottom right;
 
   /* The above 2 will work --- with one with another ................................................................. */
   background-repeat: no-repeat;
