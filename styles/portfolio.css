@@ -1,7 +1,7 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box; /*   when we use a padding the will not go outside the -- border... when we use this attributes ..      */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; /*   when we use a padding the will not go outside the -- border... when we use this attributes ..      */
 }
 /* above we remove the by default margin and padding ......... */
 
@@ -9,7 +9,7 @@
 
 /* this above is not supported til now--so we create a valid class name (the above we learn after )  */
 /* shared Style */
-.font-open-sans{
+.font-open-sans {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   /* font-weight: <weight>;
@@ -18,180 +18,229 @@
     "wdth" 100; */
 }
 
-
 .button_01 {
-    background-color: #e16e1c;
-    border: none;
-    padding: 18px 35px;
-    border-radius: 5px;
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
+  background-color: #e16e1c;
+  border: none;
+  padding: 18px 35px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
 }
 
+header {
+  background-color: rgb(14, 191, 231);
+  padding-top: 51px;
+  /* fig */
 
-
-header{
-background-color: rgb(14, 191, 231);
-    padding-top: 51px; 
-    /* fig */
-
-    /* How to use multiple picture as --- Background at different positions ? ??
+  /* How to use multiple picture as --- Background at different positions ? ??
     ans: use --url(first address, 2nd   , 3rd  and so on) 
      
     ----------Here, first time we take --- picture or image in CSS FILE--WE DO IT--->> When we TAKE PICTURE AS >> BACKGROUND..  
     */
-    background: url(../images/developer.png ) , url(../images/header_bg.png),#FFF8F3;
-    background-position: top left, bottom right;
+  background: url(../images/developer.png), url(../images/header_bg.png),
+    #fff8f3;
+  background-position: top left, bottom right;
 
-    /* The above 2 will work --- with one with another ................................................................. */
-    background-repeat: no-repeat;
-    
+  /* The above 2 will work --- with one with another ................................................................. */
+  background-repeat: no-repeat;
 }
 
-
-.logo h2{
-    font-size: 45px;
-
+.logo h2 {
+  font-size: 45px;
 }
-.color-orange{
-    color: #FD6E0A;
+.color-orange {
+  color: #fd6e0a;
 }
-
-    
 
 /* main style */
-nav{
-    width: 67%;
-    /* as, my devise width (at 90%) 1702px...the nav will be 1140px (as given in fig file)  */
-    max-width: 1140px;
-    /* fix .         the nav can be maximum 1140px */
-    margin: 0px auto;  
-    /* auto is work like dynamic --taking space from both side pixel by pixel at the end the nav is in the middle..  */
+nav {
+  width: 67%;
+  /* as, my devise width (at 90%) 1702px...the nav will be 1140px (as given in fig file)  */
+  max-width: 1140px;
+  /* fix .         the nav can be maximum 1140px */
+  margin: 0px auto;
+  /* auto is work like dynamic --taking space from both side pixel by pixel at the end the nav is in the middle..  */
 
-    /* border: 1px solid red; */
+  /* border: 1px solid red; */
 
-
-    display: flex;       /*  flex is applicable for Every thing not only div but also those who are block elements --or inline (they change their directions, x to y , and y to x ) */ 
-    justify-content: space-between;
-     text-align: center;
+  display: flex; /*  flex is applicable for Every thing not only div but also those who are block elements --or inline (they change their directions, x to y , and y to x ) */
+  justify-content: space-between;
+  text-align: center;
 }
-
 
 nav .menu {
-
- display: flex;
- list-style-type: none;
- gap: 51px;
-align-items: center;
+  display: flex;
+  list-style-type: none;
+  gap: 51px;
+  align-items: center;
 }
 
-nav .menu a{
-    font-size: 20px;
-    color: #474747;
-    text-decoration: none;
+nav .menu a {
+  font-size: 20px;
+  color: #474747;
+  text-decoration: none;
 }
-
 
 /* ---------------------------HERO SECTION  */
 
-#banner{
-/* border: 1px solid red ; */
+#banner {
+  /* border: 1px solid red ; */
 
-margin: 46px 38px 0px 230px;
-/* the margin is for the hero section  */
-display: flex;
-justify-content: space-between;
-align-items: center; 
-/* This 3 steps makes the Block elements first: inline than, Vertically those elements center--everyone individually..  */
-/* background-color: aquamarine; */
+  margin: 46px 38px 0px 230px;
+  /* the margin is for the hero section  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* This 3 steps makes the Block elements first: inline than, Vertically those elements center--everyone individually..  */
+  /* background-color: aquamarine; */
 }
-#banner .banner-content{
-    max-width: 585px;
-}
-
-#banner .banner-content h2{
-
-font-size: 45px;
-font-weight: 600;
-/* as font Semibold--so font weight 600 */
-color: #474747;
-margin-bottom: 5px;
+#banner .banner-content {
+  max-width: 585px;
 }
 
-#banner .banner-content h1{
-    font-size: 85px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #181818;
-
+#banner .banner-content h2 {
+  font-size: 45px;
+  font-weight: 600;
+  /* as font Semibold--so font weight 600 */
+  color: #474747;
+  margin-bottom: 5px;
 }
 
-#banner .banner-content p{
-    font-size: 18px;
-    color: #757575;
-    line-height: 30px;
-    margin-bottom: 30px;
+#banner .banner-content h1 {
+  font-size: 85px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #181818;
 }
 
+#banner .banner-content p {
+  font-size: 18px;
+  color: #757575;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
 
-#banner .banner-image img{
-max-width: 584px;
-vertical-align: middle; 
-/* the vertical-aline tag >> fixed the picture at the Accurate position  */
-
+#banner .banner-image img {
+  max-width: 584px;
+  vertical-align: middle;
+  /* the vertical-aline tag >> fixed the picture at the Accurate position  */
 }
 /* ==========================================Now after hero section ++++++ Next section  */
 
 #about {
-    padding-top: 130px;
-    /* about the most parent --- of the about section so, it work as -- (the padding is work as margin for other --deep thing--easy */
-
+  padding-top: 130px;
+  /* about the most parent --- of the about section so, it work as -- (the padding is work as margin for other --deep thing--easy */
 }
 
-#about .about-container{
-    width: 71%;
-    max-width: 1140px;
-    margin: 0px auto;
-    text-align: center;
+#about .about-container {
+  width: 71%;
+  max-width: 1140px;
+  margin: 0px auto;
+  text-align: center;
 
+  background-color: #fff8f3;
 
-    background-color:#FFF8F3 ;
-
-    padding: 131px 157px;
+  padding: 131px 157px;
 }
 
-.section-heading{
-    max-width: 827px;
-    text-align: center;
+.section-heading {
+  max-width: 827px;
+  text-align: center;
+  /*  but not --- > absolute Middle at the Page..  */
+  margin: 0px auto; /* For this Margin the class will 
+    --now stay at the Absolute Middle of this Page with the width and align given..  */
 }
-.section-heading h2{
+.section-heading h2 {
   font-size: 35px;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
-.section-heading p{
-
-font-size: 18px;
-line-height: 30px;
-    margin-bottom: 30px;
+.section-heading p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 30px;
 }
 
-
-#about .about-container .about-info{
-    display: flex;
-    justify-content: space-around;
+#about .about-container .about-info {
+  display: flex;
+  justify-content: space-around;
 }
 
 .about-info .info-card p {
-     font-size: 20px;
-    
-     line-height: 30px;
-     color: #757575;
+  font-size: 20px;
 
+  line-height: 30px;
+  color: #757575;
 }
-.about-info .info-card h2{
+.about-info .info-card h2 {
+  font-size: 20px;
+}
 
-    font-size: 20px;
+/*  WORK FOR SKILLS SECTION (we give this section name as --skills as WE WORK ON SEMANTIC TAGS     */
+#skills {
+  padding-top: 130px;
+}
+
+#skills .skills-container {
+  width: 71%;
+  max-width: 1140px;
+  margin: 0px auto;
+}
+
+.section-heading {
+  max-width: 827px;
+  text-align: center;
+  /*  but not --- > absolute Middle at the Page..  */
+  margin: 0px auto; /* For this Margin the class will 
+    --now stay at the Absolute Middle of this Page with the width and align given..  */
+}
+
+#skills .skills-container .skill-box {
+  display: flex;
+  gap: 24px;
+}
+
+.skill-box .skill-card {
+  padding: 30px;
+  max-width: 267px;
+  /* border: 1px solid red; */
+  /* box-shadow: (position (x,y), blur , spread , color set the opacity manually
+  --FIRST # WITH 6 DIGIT FOR COLOR AND LAST 2 DIGIT FOR OPACITY PERCENTAGE.. ); */
+  
+  box-shadow: 0px 6px 50px 0px #00000020;
+  
+  border-radius: 5px;
+}
+
+.skill-card img {
+  max-width: 44px;
+  margin-bottom: 30px;
+  /* If we already give the same 30 px , padding. Do i need to give the same margin  ? 
+    
+    ans: Yes, must.. As without margin---Any other element can overlap --others --padding area... 
+    So, AlWAYS WE HAVE TO GIVE PADDING AND   MARGIN SEPARATELY AND --- CALCULATE THEM SEPARATELY... 
+    
+    */
+}
+
+.skill-card h3 {
+  font-size: 20px;
+  /* padding-bottom: 50px;
+     Ques : Difference between margin and padding ? 
+        
+                             padding means : increase this h3 container size.. 
+                                 Diff : between margin and padding ? 
+                                  Think about when you use a background for you h3 tag  ? 
+                                  
+                                  ans : the MARGIN IS OUTER PART ..
+                                        THE PADDING IS INNER PART OF THE h3 tag here. */
+  margin-bottom: 20px;
+}
+
+.skill-card p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #757575;
 }
