@@ -192,6 +192,8 @@ nav .menu a {
 #skills .skills-container {
   width: 71%;
   max-width: 1140px;
+  /* max-width mana ---maximum ei width niba er thaka besi width kokhono niba na--.. zodi width kom 
+  hoi--toba zei width diya oitar 100% niba... (fully organized)  */
   margin: 0px auto;
 }
 
@@ -402,3 +404,78 @@ footer .footer-container {
 
 
 } 
+
+
+
+.hide{
+  display:none !important;
+/* give more priority from id .. use important..  */
+}
+
+/* we add this class to every-Main section and then--then take one by one section and make this 
+responsive... 
+
+*/
+
+@media screen and (max-width: 576px) {
+
+  /* what we do in it: we only take one by one class--->and when we take a 
+  class--> we do operations on it's one by one section----till the finish.. 
+   and give new style for this small or medium Device ... 
+  using the before designs(all before designed are already applied ) ....... 
+  
+  we can update the value or Add a new attributes .. in the media query..Like give new width.. new padding 
+  --new display : column.. 
+  
+
+
+  */
+  #skills, #about, #resume{
+    padding-top: 60px;
+  }
+
+#skills .skills-container {
+    /* width: 71%;
+    max-width: 1140px;
+    margin: 0px auto; */
+    width: 95%;
+
+    /* here what we write : those will work like--> overridden... so, If something remain the same like the before 
+    so, no need to write it again here.... 
+    
+    just write those attributes who are new--or have updated value... 
+    
+    /*/
+}
+h2 {
+    
+    font-size: 1.2em;
+    
+}
+
+#skills .skills-container .skill-box{
+  flex-direction: column; 
+  /* change the flex direction to row to column...  */
+}
+*{
+    margin: 12px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.skill-box .skill-card{
+  width: 100%;
+  /*  now 576 px er puratai new ... jodi paro... but 576 er beshi hola ... 576 px e niba... 
+   */
+}
+
+  /* ------------------------------------------------------------------------------ */
+
+  #about .about-container{
+    padding: 20px 12px;
+width: 95%;
+    
+  }
+  #about .about-container .about-info{
+    flex-direction: column;
+  }
+}
