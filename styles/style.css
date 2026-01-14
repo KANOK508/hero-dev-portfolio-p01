@@ -478,4 +478,127 @@ width: 95%;
   #about .about-container .about-info{
     flex-direction: column;
   }
+
+footer .footer-container{
+  flex-direction: column;
+  width: 90%;
+}
+
+
+
+.footer-container form input[type="text"], .footer-container form textarea {
+    width: 100%;
+   
+    /*
+    jaigula update korar dorkar nai ---taderk bad diya daboo.... 
+
+    padding: 18px 31px;
+    margin-bottom: 24px;
+    border: none;
+    border-radius: 5px;
+    color: #757575; */
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #FFF8F3;
+    padding: 30px 0px;
+}
+
+.form .button_01{
+  justify-content: center;
+  margin: 0px auto ;
+  text-align: center;
+}
+  
+
+#resume .resume-container{
+  flex-direction: column;
+      /* margin: 113px auto 0px; */
+      margin-top: 60px;
+}
+.resume-container .section-title{
+  margin: 5px;
+}
+
+.experience , .education {
+  text-align: center;
+  margin-right: 5px;
+margin-left: 5px;
+}
+
+.resume-card {
+    width: 100%;
+    margin-right: 10px;
+}
+
+
+/* --------------------------------------------- */
+
+ header{
+ padding-top: 20px;
+ margin: 10px; 
+ }
+
+ header {
+    background-color: rgb(14, 191, 231);
+    /* padding-top: 51px; */
+    background: url(../images/developer.png), url(../images/header_bg.png),
+    #fff8f3;
+    /* background-position: top left, bottom right; */
+    background-position: bottom right, bottom right;
+    background-repeat: no-repeat;
+}
+ #banner .banner-content h1 {
+    font-size: 54px;
+
+}
+
+ nav {
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+   
+}
+nav .menu{
+  gap: 5px;
+  /* margin: 5px; */
+
+  flex-wrap: wrap;
+  justify-content: center;
+/* jara already flex direction row atcha--- Again--ader flex direction column chai na---tader khatra-
+
+flex-wrap: wrap use korbo ... o justify-content: center korbo........
+
+*/
+
+}
+
+
+#banner {
+
+    /* margin: 46px 38px 0px 230px; */
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* background-color: aquamarine; */
+}
+/* image width... (when we click on an image --in inspect..we get.. the DEFAULT width... that not change so, 
+
+we ---> set the image width as ---- 100%..................*/
+#banner .banner-image img{
+  width: 100%;
+  margin-bottom: 0px;
+}
+.banner-image{
+  margin:0px;
+}
+
+.form {
+  text-align: center;
+}
 }
